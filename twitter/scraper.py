@@ -367,11 +367,6 @@ class Scraper:
                 return await asyncio.gather(*tasks)
 
         trends = asyncio.run(process())
-        out = self.out / 'raw' / 'trends'
-        out.mkdir(parents=True, exist_ok=True)
-        (out / f'{time.time_ns()}.json').write_text(orjson.dumps(
-            {k: v for d in trends for k, v in d.items()},
-            option=orjson.OPT_INDENT_2 | orjson.OPT_SORT_KEYS).decode(), encoding='utf-8')
         return trends
 
     def spaces(self, *, rooms: list[str] = None, search: list[dict] = None, audio: bool = False, chat: bool = False,
