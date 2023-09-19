@@ -425,7 +425,7 @@ trending_params = {
     'cards_platform': 'Web-12',
     'include_cards': '1',
     'include_ext_alt_text': 'true',
-    'include_ext_limited_action_results': 'false',
+    'include_ext_limited_action_results': 'true',
     'include_quote_count': 'true',
     'include_reply_count': '1',
     'tweet_mode': 'extended',
@@ -438,12 +438,12 @@ trending_params = {
     'include_ext_trusted_friends_metadata': 'true',
     'send_error_codes': 'true',
     'simple_quoted_tweet': 'true',
-    'count': 1000,
+    'count': 20,
     'requestContext': 'launch',
-    'include_page_configuration': 'true',
-    'initial_tab_id': 'trending',
+    'candidate_source': 'trends',
+    'include_page_configuration': 'false',
     'entity_tokens': 'false',
-    'ext': 'mediaStats,highlightedLabel,hasNftAvatar,voiceInfo,birdwatchPivot,enrichments,superFollowMetadata,unmentionInfo,editControl,vibe'
+    'ext': 'mediaStats,highlightedLabel,hasNftAvatar,voiceInfo,birdwatchPivot,superFollowMetadata,unmentionInfo,editControl'
 }
 
 account_settings = {
