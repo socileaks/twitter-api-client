@@ -438,7 +438,7 @@ trending_params = {
     'include_ext_trusted_friends_metadata': 'true',
     'send_error_codes': 'true',
     'simple_quoted_tweet': 'true',
-    'count': 20,
+    'count': 15,
     'requestContext': 'launch',
     'candidate_source': 'trends',
     'include_page_configuration': 'false',
